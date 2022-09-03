@@ -1,0 +1,119 @@
+/* Responsive CSS Document */
+
+@media (min-width: 1400px) {
+
+}
+/*(min-width: 1400px)*/
+
+@media (min-width: 992px) and (max-width: 1399px) {
+
+}
+/*(min-width: 1200px) and (max-width: 1399px)*/
+
+@media (min-width: 992px) {
+  .container {padding-right: 0;padding-left: 0;}
+}
+/*(min-width: 992px)*/
+
+/*Grid xl Start*/
+@media (max-width: 1399px) { 
+
+}
+/*(max-width: 1399px)*/
+
+
+/*Between Grid xl*/
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .hero-banner {padding: 140px 0;}
+  .hero-banner .hero-heading {font-size: 90px;}
+  .text-block-one .text-block {width: 310px; right: -100px;}
+  .our-project .title-text {font-size: 20px;}
+}
+/*(min-width: 1200px) and (max-width: 1399px)*/
+
+
+/*Grid lg Start*/
+@media (max-width: 1199px) {
+  body {font-size: 16px;}
+  .h2, h2 {font-size: 40px;}
+  .theme-main-menu,.theme-main-menu.sticky-menu.fixed {padding-left: 12px; padding-right: 12px;}
+  body .btn-one {font-size: 16px; line-height: 48px; padding: 0 32px;}
+  .hero-banner .hero-sub-heading {font-size: 18px;}
+  .upper-title-one {font-size: 25px;}
+  .title-one {font-size: 40px; letter-spacing: 0px;}
+  .text-block-one .text-wrapper p {margin-bottom: 25px;}
+  .text-block-one .text-block {width: 100%; right: 0; bottom: 0; padding: 30px 20px 20px; border-radius: 10px 10px 0 0;}
+  .text-block-one .text-block span {font-size: 45px;}
+  .text-block-one .text-block p {font-size: 16px; line-height: 1.7em;}
+  .text-block-one .block-container .shapes {right: 0;}
+  .text-block-two .block-wrapper h4 {font-size: 18px;}
+  .text-block-two .block-container .block-wrapper {padding: 35px 20px 25px;}
+  .title-two {font-size: 34px;}
+  .our-project .title-text {font-size: 18px; margin: 30px 0; line-height: 1.3em;}
+  .block-style-one h4 {font-size: 18px; padding: 12px 10px;}
+  .block-style-one .img-meta {margin: 20px 15px 25px; padding: 10px;}
+  .block-style-one .pr-info {margin: 0 15px 30px;}
+  .inner-banner {padding: 50px 0;}
+  .title-three {font-size: 22px;}
+  .text-block-four .block-style .year {font-size: 22px; width: 65px;}
+  .text-block-four .block-style p {width: calc(100% - 65px);}
+
+}
+/*(max-width: 1199px)*/
+
+
+
+/*Between Grid lg*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-banner {padding: 110px 0;}
+  .hero-banner .hero-heading {font-size: 70px;}
+}
+/*(min-width: 992px) and (max-width: 1199px)*/
+
+
+
+/*Grid md Start*/
+@media (max-width: 991px) {
+  .header-space {margin-top: 92px;}
+  .theme-main-menu .logo img,
+  .theme-main-menu.sticky-menu.fixed .logo img {width: 100px;}
+  .theme-main-menu {padding: 12px 12px;}
+  .hero-banner {padding: 90px 0;}
+  .hero-banner .hero-heading {font-size: 50px; line-height: 1.2em;}
+
+}
+/*(max-width: 991px)*/
+
+
+
+/*Between Grid md*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/*(min-width: 768px) and (max-width: 991px)*/
+
+
+
+/*Grid sm Start*/
+@media (max-width: 767px) {
+  .map-area-one .mapouter {height: 350px;}
+}
+/*(max-width: 767px)*/
+
+
+
+/*Between Grid sm*/
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+/*(min-width: 576px) and (max-width: 767px)*/
+
+
+
+/*Extra Small breakpoints*/
+@media (max-width: 575px) {
+  .theme-main-menu .call {font-size: 15px;}
+  .theme-main-menu .call a {font-size: 16px;}
+  .block-style-one .img-meta img {max-width: 100%;}
+}
+/*(max-width: 575px)*/

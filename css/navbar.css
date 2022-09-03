@@ -1,0 +1,103 @@
+.navbar-toggler {
+  width: 44px;
+  height: 38px;
+  box-shadow: none;
+  position: relative;
+  z-index: 99;
+  background: var(--prime-one);
+  padding: 0;
+  border-radius: 3px;
+}
+.navbar-toggler:focus {box-shadow: none;}
+.navbar-toggler::before,
+.navbar-toggler::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  width: 26px;
+  height: 2px;
+  pointer-events: none;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  background: #fff;
+}
+.navbar-toggler span {
+  position: absolute;
+  left: 9px;
+  overflow: hidden;
+  width: 26px;
+  height: 2px;
+  text-indent: 200%;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  background: #fff;
+}
+.navbar-toggler::before {
+  -webkit-transform: translate3d(0, -9px, 0) scale3d(1, 1, 1);
+  transform: translate3d(0, -9px, 0) scale3d(1, 1, 1);
+}
+.navbar-toggler::after {
+  -webkit-transform: translate3d(0, 9px, 0) scale3d(1, 1, 1);
+   transform: translate3d(0, 9px, 0) scale3d(1, 1, 1); 
+}
+.navbar-toggler[aria-expanded="true"] span {opacity: 0;}
+.navbar-toggler[aria-expanded="true"]::before {
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+.navbar-toggler[aria-expanded="true"]::after {
+  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+  transform: rotate3d(0, 0, 1, -45deg);
+}
+.navbar .navbar-nav .nav-link {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+	font-size: 17px;
+  letter-spacing: 0.5px;
+	color: #000;
+	padding: 7px 15px;
+	margin: 0 5px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .navbar-nav .active .nav-link,
+.navbar .navbar-nav .nav-item:hover .nav-link {color: #fff; background: var(--prime-two);}
+
+/*----- For Desktop -------*/
+@media screen and (min-width: 992px) {
+  .theme-main-menu .navbar {margin-left: 7%;}
+}
+/*----- For Mobile ----*/
+@media screen and (max-width: 991px) {
+  .theme-main-menu .navbar {position: static;}
+  .navbar-collapse {
+    position: absolute;
+    top: calc(100% + 11px);
+    background-color: #ffffff;
+    left: 0;
+    max-height: 80vh;
+    overflow-y: auto;
+    clear: both;
+    width: 100%;
+    z-index: 9999;
+    transform: scale(1 , 0);
+    transform-origin: 100% 0;
+    display: block !important;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar-collapse.show {transform: scale(1); box-shadow: 0 25px 25px rgba(35,35,35,0.1);}
+  .navbar .navbar-nav .nav-link {
+    font-size: 16px;
+    margin: 0;
+    padding: 0 15px;
+    line-height: 46px;
+    border-bottom: 1px solid #efefef;
+  }
+  .navbar .navbar-nav .nav-item:last-child .nav-link {border: none;}
+
+}
+/*(max-width: 991px)*/
